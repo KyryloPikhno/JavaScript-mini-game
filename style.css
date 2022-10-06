@@ -1,0 +1,60 @@
+.game {
+  width: 600px;
+  height: 200px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  margin: auto;
+}
+
+#soldier {
+  width: 50px;
+  height: 50px;
+  background-image: url(img/soldier_PNG16083.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+}
+
+#butilka {
+  width: 20px;
+  height: 40px;
+  background-image: url(img/png-transparent-glass-bottle-water-bottles-water-bottle-mockup-glass-beer-bottle-wine-bottle.png);
+  background-size: 20px 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+  animation: butilkaMov 3s infinite linear;
+}
+
+@keyframes butilkaMov {
+  0% {
+    left: 580px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+.jump {
+  animation: jump 0.5s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  50% {
+    top: 80px;
+  }
+  80% {
+    top: 100px;
+  }
+  80% {
+    top: 120px;
+  }
+  100% {
+    top: 150px;
+  }
+}
